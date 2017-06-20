@@ -1,0 +1,19 @@
+{
+  "name": "stream-one",
+  "version": "1.0.0",
+  "description": "My project for the end of stream one. Project is called ReLife",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShavingSeagull/ReLife.git"
+  },
+  "author": "Scott Kipp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShavingSeagull/ReLife/issues"
+  },
+  "homepage": "https://github.com/ShavingSeagull/ReLife#readme"
+}
