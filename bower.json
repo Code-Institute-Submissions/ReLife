@@ -1,0 +1,22 @@
+{
+  "name": "stream-one",
+  "description": "My project for the end of stream one. Project is called ReLife",
+  "main": "index.js",
+  "authors": [
+    "Scott Kipp"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ShavingSeagull/ReLife",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}
