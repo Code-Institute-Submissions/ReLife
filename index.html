@@ -1,47 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="RelifeApp">
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-  <title>ReLife - The program for second chances</title>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReLIFE - The experiment for second chances</title>
   
   <!-- Angular HTML 5 Mode -->
-  <!--<base href="/">--> <!-- COMMENTED OUT FOR NOW DUE TO CLASHES WITH PAGE REFRESHING TO SEE STYLE CHANGES -->
+  <base href="/">
   
   <!-- External CSS and fonts -->
-  <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link rel="stylesheet" href="style/style.css">
   
   <!-- Bower Components -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  
+  <style>
+  body {
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  </style>
 </head>
 
 <body>
 
-  <nav>
-	  <!-- Collapsable menu for mobile --> <!-- COMMENTED OUT UNTIL CSS FOR MOBILE SCREENS IS COMPLETE -->
-	  <!--<button type="button" class="navbar-toggle" id="nav-button" data-toggle="collapse" data-target="#nav-list">
-	    <span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	  </button>-->
-	  
-	  <!--<div id="nav-arrow" class="glyphicon glyphicon-triangle-right">-->
-	  
-	  <ul id="nav-list">
-	    <li><a href="/">Home</a></li>
-		<li><a href="/about">About</a></li>
-		<li><a href="/faq">FAQ</a></li>
-		<li><a href="/contact">Contact</a></li>
-		<li><a href="/register">Registration</a></li>
-	  </ul>
+  <header>
+    <img id="logo" src="pics/ReLife_logo.jpg" alt="ReLife Logo">
+  </header>
+  
+  <nav id="myNav" onmouseenter="expandNav()" onmouseleave="contractNav()" onclick="toggleNav()">
+	<a id="navTop" href="/">Home</a>
+	<a href="/about">About</a>
+	<a href="/faq">FAQ</a>
+	<a href="/contact">Contact</a>
+	<a href="/register">Registration</a>
+	<div id="navArrow"><span class="glyphicon glyphicon-triangle-right"></span></div>
   </nav>
   
-  <section id="logo">
-    <img src="pics/ReLife_logo.jpg" width="25%" height="25%" alt="ReLife Logo">
+  <hr class="hrLine">
+  
+  <section id="ngView" data-ng-view>
+  
   </section>
+  
+  <footer>
+	<p>Scott Kipp - ReLIFE &copy;</p>
+  </footer>
+  
+  <script>
+  window.onresize = function(){ 
+      location.reload(); 
+  }
+  
+  function expandNav() {
+      var i = document.getElementById("myNav");
+	  var x = document.body;
+	  var p = document.getElementById("logo");
+	  
+	  if ($(window).width() > 750) {
+	      i.style.left = "0";
+	      x.style.backgroundColor = "rgba(0,0,0,0.4)";
+	      p.src = "pics/ReLife_logo2.jpg";
+      }
+  }
+  
+  function contractNav() {
+      var i = document.getElementById("myNav");
+	  var x = document.body;
+	  var p = document.getElementById("logo");
+	  
+	  if ($(window).width() > 750) {
+	      i.style.left = "-175px";
+	      x.style.backgroundColor = "#fff";
+	      p.src = "pics/ReLife_logo.jpg";
+      }
+  }
+  
+  function toggleNav() {
+      var i = document.getElementById("myNav");
+	  var x = document.body;
+	  var p = document.getElementById("logo");
+	  
+	  
+	  if ($(window).width() <= 750) {
+	      if (i.style.left == "-125px") {
+	          i.style.left = "0";
+	          x.style.backgroundColor = "rgba(0,0,0,0.4)";
+	          p.src = "pics/ReLife_logo2.jpg";
+	      } else {
+	          i.style.left = "-125px";
+		      x.style.backgroundColor = "#fff";
+		      p.src = "pics/ReLife_logo.jpg";
+	      }
+	  }
+  }
+  </script>
 
-
+  <script src="js/app.js"></script>
 </body>
 </html>
