@@ -50,56 +50,8 @@
   <footer>
 	<p>Scott Kipp - ReLIFE &copy;</p>
   </footer>
-  
-  <script>
-  window.onresize = function(){ 
-      location.reload(); 
-  }
-  
-  function expandNav() {
-      var i = document.getElementById("myNav");
-	  var x = document.body;
-	  var p = document.getElementById("logo");
-	  
-	  if ($(window).width() > 750) {
-	      i.style.left = "0";
-	      x.style.backgroundColor = "rgba(0,0,0,0.4)";
-	      p.src = "pics/ReLife_logo2.jpg";
-      }
-  }
-  
-  function contractNav() {
-      var i = document.getElementById("myNav");
-	  var x = document.body;
-	  var p = document.getElementById("logo");
-	  
-	  if ($(window).width() > 750) {
-	      i.style.left = "-175px";
-	      x.style.backgroundColor = "#fff";
-	      p.src = "pics/ReLife_logo.jpg";
-      }
-  }
-  
-  function toggleNav() {
-      var i = document.getElementById("myNav");
-	  var x = document.body;
-	  var p = document.getElementById("logo");
-	  
-	  
-	  if ($(window).width() <= 750) {
-	      if (i.style.left == "-125px") {
-	          i.style.left = "0";
-	          x.style.backgroundColor = "rgba(0,0,0,0.4)";
-	          p.src = "pics/ReLife_logo2.jpg";
-	      } else {
-	          i.style.left = "-125px";
-		      x.style.backgroundColor = "#fff";
-		      p.src = "pics/ReLife_logo.jpg";
-	      }
-	  }
-  }
-  </script>
 
+  <script src="js/script.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
