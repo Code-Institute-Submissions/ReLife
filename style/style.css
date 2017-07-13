@@ -2,11 +2,7 @@
   =     Style sheet for ReLife Project      =
   ===========================================*/
 
-/*body {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 100%;
-}*/
-
+/* Index page */  
 #myNav {
 	width: 200px;
 	height: 100%;
@@ -60,10 +56,6 @@ nav a:hover {
 	font-size: 1.5em;
 }
 
-.glyphicon-menu-hamburger {
-	color: #fff;
-}
-
 header {
 	text-align: center;
 	position: relative;
@@ -95,7 +87,9 @@ footer {
 footer p {
 	padding-top: 15px;
 }
+/* End of index page */
 
+/* Home page (displayed in ng-view) */
 #jumboTrans {
     background-color: rgba(238,238,238,0);
 }
@@ -104,7 +98,7 @@ footer p {
 	float: right;
 }
 
-.col-md-6.homeImgDiv.floatLeft {
+.col-md-6.homeImg.floatLeft {
 	float: left;
 }
 
@@ -112,14 +106,55 @@ footer p {
 	padding-bottom: 40px;
 }
 
-.homeImgDiv {
+.homeImg {
 	text-align: center;
 }
 
-.homeImg {
+.homeImg > img {
 	max-width: 100%;
 }
+/* End of home page */
 
+/* About page */
+#aboutContainer {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+/* End of about page */
+
+/* Contact page */
+.contactPadding {
+	padding-bottom: 30px;
+}
+/* End of contact page */
+
+/* Registration page */
+.formField {
+	padding-top: 20px;
+}
+
+.formLegend {
+	padding-top: 30px;
+}
+
+#zipCode {
+	text-transform: uppercase;
+}
+
+#regForm {
+	background-color: #fff;
+	border: 1px solid #a9a9a9;
+	border-radius: 20px;
+	padding: 20px 20px 20px 30px;
+	margin-bottom: 30px;
+}
+
+#submitButton {
+	font-size: 1.5em;
+}
+/* End of Registration page */
+
+/* Media queries */
 @media screen and (max-width: 750px) {
 	
 	#myNav {
@@ -183,7 +218,7 @@ footer p {
 
 @media screen and (max-width: 576px) {
 	
-	.homeImgDiv {
+	.homeImg {
 		display: none;
 	}
 }
