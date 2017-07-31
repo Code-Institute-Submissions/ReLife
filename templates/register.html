@@ -6,14 +6,14 @@
   passed to anybody outside the experiment.</p>
   <p>* All fields marked with an asterisk (*) are mandatory</p>
   <br>
-  <form id="regForm" name="regForm">
+  <form id="regForm" name="regForm" data-ng-submit="submitForm()">
 	<fieldset>
 	<legend>Personal Information</legend>
 	  <div class="row">
 	    <div class="col-sm-6">
 	      <div class="formField">
-	        <label>First Name: * <br>
-	          <input type="text" name="fName" size="30" required>
+	        <label for="fName">First Name: * <br>
+	          <input type="text" name="fName" size="30" data-ng-model="fName" required>
 	        </label>
 	      </div>
 	      <div class="formField">
@@ -95,7 +95,7 @@
 		  <div class="formField">
 		    <label>Are you a citizen of the country where you reside?: *<br>
 			  <input type="radio" name="citizen" value="yes" checked> Yes <br>
-			  <input type="radio" name="citizen" value="no"> No
+			  <input type="radio" data-ng-model="citizenNo" name="citizen" value="no"> No
 			</label>
 		  </div>
 		</div>
@@ -155,7 +155,7 @@
 			  <select name="empField">
 			    <option value="notApplic">N/A</option>
 				<option value="agriculture">Agriculture</option>
-				<option value="business">Business Management/Administration</option>
+				<option value="business">Business Administration</option>
 				<option value="communications">Communications</option>
 				<option value="construction">Construction</option>
 				<option value="education">Education</option>
@@ -196,23 +196,23 @@
 		<div class="col-sm-6">
 		  <div class="formField">
 			<label>Have you EVER suffered from any of the following diseases?: *</label><br>
-			<input type="checkbox" name="seriousIllness" value="angina"> Angina <br>
-			<input type="checkbox" name="seriousIllness" value="cancer"> Cancer <br>
-			<input type="checkbox" name="seriousIllness" value="cPalsy"> Cerebral Palsy <br>
-			<input type="checkbox" name="seriousIllness" value="copd"> Chronic Obstructive Pulmonary Disease (COPD) <br>
-			<input type="checkbox" name="seriousIllness" value="cysticF"> Cystic Fibrosis <br>
-			<input type="checkbox" name="seriousIllness" value="dish"> Diffuse Idiopathic Skeletal Hyperostosis (DISH) <br>
+			<input type="checkbox" data-ng-model="angina" name="angina" value="checked"> Angina <br>
+			<input type="checkbox" data-ng-model="cancer" name="cancer" value="checked"> Cancer <br>
+			<input type="checkbox" data-ng-model="cPalsy" name="cPalsy" value="checked"> Cerebral Palsy <br>
+			<input type="checkbox" data-ng-model="copd" name="copd" value="checked"> Chronic Obstructive Pulmonary Disease (COPD) <br>
+			<input type="checkbox" data-ng-model="cysticF" name="cysticF" value="checked"> Cystic Fibrosis <br>
+			<input type="checkbox" data-ng-model="dish" name="dish" value="checked"> Diffuse Idiopathic Skeletal Hyperostosis (DISH) <br>
 		  </div>
 		</div>
 		<div class="col-sm-6">
 		  <div class="formField">
 			<br>
-			<input type="checkbox" name="seriousIllness" value="heartDis"> Heart Disease <br>
-			<input type="checkbox" name="seriousIllness" value="hivAids"> HIV/AIDS <br>
-			<input type="checkbox" name="seriousIllness" value="ibs"> Irritable Bowel Syndrome (IBS) <br>
-			<input type="checkbox" name="seriousIllness" value="kidneyF"> Kidney Failure <br>
-			<input type="checkbox" name="seriousIllness" value="lungDis"> Lung Disease <br>
-			<input type="checkbox" name="seriousIllness" value="polio"> Polio
+			<input type="checkbox" data-ng-model="heartDis" name="heartDis" value="checked"> Heart Disease <br>
+			<input type="checkbox" data-ng-model="hivAids" name="hivAids" value="checked"> HIV/AIDS <br>
+			<input type="checkbox" data-ng-model="ibs" name="ibs" value="checked"> Irritable Bowel Syndrome (IBS) <br>
+			<input type="checkbox" data-ng-model="kidneyF" name="kidneyF" value="checked"> Kidney Failure <br>
+			<input type="checkbox" data-ng-model="lungDis" name="lungDis" value="checked"> Lung Disease <br>
+			<input type="checkbox" data-ng-model="polio" name="polio" value="checked"> Polio
 		  </div>
 		</div>
 	  </div>
@@ -221,20 +221,20 @@
 	    <div class="col-sm-6">
 		  <div class="formField">
 		    <label>Have you suffered from any of the following in the past 12 MONTHS?: *</label><br>
-			<input type="checkbox" name="tempIllness" value="anxiety"> Anxiety (severe) <br>
-			<input type="checkbox" name="tempIllness" value="bronchitis"> Bronchitis <br>
-			<input type="checkbox" name="tempIllness" value="depression"> Depression (severe) <br>
-			<input type="checkbox" name="tempIllness" value="ebola"> Ebola <br>
-			<input type="checkbox" name="tempIllness" value="fatigue"> Fatigue (chronic)
+			<input type="checkbox" data-ng-model="anxiety" name="anxiety" value="checked"> Anxiety (severe) <br>
+			<input type="checkbox" data-ng-model="bronchitis" name="bronchitis" value="checked"> Bronchitis <br>
+			<input type="checkbox" data-ng-model="depression" name="depression" value="checked"> Depression (severe) <br>
+			<input type="checkbox" data-ng-model="ebola" name="ebola" value="checked"> Ebola <br>
+			<input type="checkbox" data-ng-model="fatigue" name="fatigue" value="checked"> Fatigue (chronic)
 		  </div>
 		</div>
 		<div class="col-sm-6">
 		  <div class="formField">
 			<br>
-			<input type="checkbox" name="tempIllness" value="glanFever"> Glandular Fever <br>
-			<input type="checkbox" name="tempIllness" value="pneumonia"> Pneumonia <br>
-			<input type="checkbox" name="tempIllness" value="sars"> Severe Accute Respitory Syndrome (SARS) <br>
-			<input type="checkbox" name="tempIllness" value="vision"> Vision Difficulties
+			<input type="checkbox" data-ng-model="glanFever" name="glanFever" value="checked"> Glandular Fever <br>
+			<input type="checkbox" data-ng-model="pneumonia" name="pneumonia" value="checked"> Pneumonia <br>
+			<input type="checkbox" data-ng-model="sars" name="sars" value="checked"> Severe Accute Respitory Syndrome (SARS) <br>
+			<input type="checkbox" data-ng-model="vision" name="vision" value="checked"> Vision Difficulties (severe)
 		  </div>
 		</div>
 	  </div>
@@ -247,7 +247,7 @@
 		  <div class="formField">
 		    <label>Have you EVER had a criminal record?: *</label><br>
 		    <input type="radio" name="criminal" value="no" checked> No <br>
-		    <input type="radio" name="criminal" value="yes"> Yes
+		    <input type="radio" data-ng-model="criminalYes" name="criminal" value="yes"> Yes
 		  </div>
 		</div>
 	  </div>
@@ -255,9 +255,7 @@
 	  <div class="row">
 		<div class="col-xs-12">
 		  <div class="formField">
-		    <input type="checkbox" name="declaration" value="true"> I understand that entering incorrect information will nullify 
-		    my candidacy for this project. I hereby confirm that all of the information entered onto this form is accurate to the 
-		    best of my knowledge.
+		    <input type="checkbox" data-ng-model="declaration" name="declaration" value="true" required> I understand that entering incorrect information will nullify my candidacy for this project. I hereby confirm that all of the information entered onto this form is accurate to the best of my knowledge.
 		  </div>
 		</div>
 	  </div>
@@ -265,11 +263,28 @@
 	  <div class="row">
         <div class="col-xs-12">
 		  <div class="formField">
-		    <input id="submitButton" type="submit" value="Submit">
+		    <button id="submitButton" class="btn btn-primary" type="submit" data-ng-disabled="regForm.$invalid" data-toggle="modal" data-target="myModal">Submit</button>
 		  </div>
 		</div>
 	  </div>
 	</fieldset>
+
+	<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Just a Moment...</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Thank you for your submission, {{fName}}!</p>
+	        <p>Please bear with us while your form is checked. This could take a few seconds.</p>
+	        <div id="loader"></div>
+	      </div>
+	    </div>
+	  </div>
+	</div>-->
 	
 
 </div>

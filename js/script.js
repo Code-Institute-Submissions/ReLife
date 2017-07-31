@@ -152,7 +152,7 @@ function toggleNav() {
 			}
 			  
 			if (window.location.pathname == "/register") {
-			    reg.style.backgroundColor = "rgb(153,153,153)";
+			    reg.style.backgroundColor = "#fff";
 			  
 			    for (x = 0; x < field.length; x++) {
 				    field[x].style.backgroundColor = "#fff";
@@ -164,4 +164,8 @@ function toggleNav() {
 			}
 	    }
 	}
+}
+
+function refNumber(min, max) {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
 }

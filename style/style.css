@@ -74,6 +74,7 @@ header {
 
 #ngView {
 	background: linear-gradient(to bottom, rgba(155,235,255,0), rgba(155,235,255,1));
+	padding-left: 50px;
 }
 
 footer {
@@ -87,7 +88,6 @@ footer {
 footer p {
 	padding-top: 15px;
 }
-/* End of index page */
 
 /* Home page (displayed in ng-view) */
 #jumboTrans {
@@ -113,20 +113,17 @@ footer p {
 .homeImg > img {
 	max-width: 100%;
 }
-/* End of home page */
 
 /* About page */
 #aboutContainer {
 	padding-top: 40px;
 	padding-bottom: 30px;
 }
-/* End of about page */
 
 /* Contact page */
 .contactPadding {
 	padding-bottom: 30px;
 }
-/* End of contact page */
 
 /* Registration page */
 .formField {
@@ -152,7 +149,13 @@ footer p {
 #submitButton {
 	font-size: 1.5em;
 }
-/* End of Registration page */
+
+/* Fail and Success page */
+.resultHeadline {
+	font-size: 4em;
+	font-weight: bold;
+	text-align: center;
+}
 
 /* Media queries */
 @media screen and (max-width: 750px) {
@@ -182,7 +185,7 @@ footer p {
 	}
 }
 
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {
 	
 	#ngView {
 		padding-left: 50px;
@@ -203,18 +206,11 @@ footer p {
 	}
 }
 
-@media screen and (min-width: 992px) {
-	
-	#ngView {
-		/*padding-left: 50px;*/
-	}
-}
-
 @media screen and (min-width: 850px) and (max-width: 950px) {
 	#ngView {
 		padding-left: 30px;
 	}
-}
+}*/
 
 @media screen and (max-width: 576px) {
 	

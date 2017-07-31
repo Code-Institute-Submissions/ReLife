@@ -1,26 +1,34 @@
-angular.module("RelifeApp", ["ngRoute"]);
+angular.module("RelifeApp", ["ngRoute", "RouteControllers"]);
 
 angular.module("RelifeApp").config(function($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode(true);
 	
 	$routeProvider.when("/", {
-		templateUrl: "templates/home.html",
-		controller: ""
+		templateUrl: "templates/home.html"
+		
 	})
 	.when("/about", {
-		templateUrl: "templates/about.html",
-		controller: ""
+		templateUrl: "templates/about.html"
+		
 	})
 	.when("/faq", {
-		templateUrl: "templates/faq.html",
-		controller: ""
+		templateUrl: "templates/faq.html"
+		
 	})
 	.when("/contact", {
-		templateUrl: "templates/contact.html",
-		controller: ""
+		templateUrl: "templates/contact.html"
+		
 	})
 	.when("/register", {
 		templateUrl: "templates/register.html",
+		controller: "RegistrationController"
+	})
+	.when("/fail", {
+		templateUrl: "templates/fail.html"
+		
+	})
+	.when("/success", {
+		templateUrl: "templates/success.html",
 		controller: "RegistrationController"
 	})
 	.otherwise({
