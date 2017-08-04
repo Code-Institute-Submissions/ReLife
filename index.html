@@ -22,7 +22,10 @@
   <style>
   body {
       font-family: 'Source Sans Pro', sans-serif;
+      
+      padding-right: 0 !important; /* Fixes a bug with Bootstrap modals creating a blank space for a scroll bar */
   }
+
   </style>
 </head>
 
@@ -33,12 +36,12 @@
   </header>
   
   <nav id="myNav" onmouseenter="expandNav()" onmouseleave="contractNav()" onclick="toggleNav()">
-	<a id="navTop" href="/">Home</a>
-	<a href="/about">About</a>
-	<a href="/faq">FAQ</a>
-	<a href="/contact">Contact</a>
-	<a href="/register">Registration</a>
-	<div id="navArrow"><span class="glyphicon glyphicon-triangle-right"></span></div>
+	  <a id="navTop" href="/">Home</a>
+	  <a href="/about">About</a>
+	  <a href="/faq">FAQ</a>
+	  <a href="/contact">Contact</a>
+	  <a href="/register">Registration</a>
+	  <div id="navArrow"><span class="glyphicon glyphicon-triangle-right"></span></div>
   </nav>
   
   <hr class="hrLine">
@@ -48,10 +51,11 @@
   </section>
   
   <footer>
-	<p>Scott Kipp - ReLIFE &copy;</p>
+	  <p>Scott Kipp - ReLIFE &copy;</p>
   </footer>
 
   <script src="js/script.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/controller.js"></script>
 </body>
 </html>

@@ -166,6 +166,10 @@ function toggleNav() {
 	}
 }
 
-function refNumber(min, max) {
-	return Math.floor(Math.random() * (max - min + 1)) + min;
+function closeModal() {
+	setTimeout(function(){
+        $("#myModal").modal("hide");
+        $("body").removeClass("modal-open");
+        $(".modal-backdrop").remove();
+    }, 5000);
 }

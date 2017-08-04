@@ -75,6 +75,7 @@ header {
 #ngView {
 	background: linear-gradient(to bottom, rgba(155,235,255,0), rgba(155,235,255,1));
 	padding-left: 50px;
+	
 }
 
 footer {
@@ -87,6 +88,10 @@ footer {
 
 footer p {
 	padding-top: 15px;
+}
+
+p {
+	font-size: 1.13em;
 }
 
 /* Home page (displayed in ng-view) */
@@ -104,10 +109,6 @@ footer p {
 
 .homePadding {
 	padding-bottom: 40px;
-}
-
-.homeImg {
-	text-align: center;
 }
 
 .homeImg > img {
@@ -150,12 +151,44 @@ footer p {
 	font-size: 1.5em;
 }
 
+#loader {  /* Credit to W3Schools.com for the loader code */
+	left: 50%;
+	top: 50%;
+	width: 120px;
+	height: 120px;
+	margin: auto;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 90px;
+	height: 90px;
+	-webkit-animation: spin 1.5s linear infinite;
+	-ms-animation: spin 1.5s linear infinite;
+	animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+@-ms-keyframes spin {
+	0% {-ms-transform: rotate(0deg);}
+	100% {-ms-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
 /* Fail and Success page */
 .resultHeadline {
 	font-size: 4em;
 	font-weight: bold;
 	text-align: center;
 }
+
 
 /* Media queries */
 @media screen and (max-width: 750px) {
@@ -175,7 +208,7 @@ footer p {
 	}
 	
 	#myNav a {
-		font-size: 1em;
+		font-size: 1.2em;
 		padding: 10px 0 10px 10px;
 	}
 	
@@ -184,33 +217,6 @@ footer p {
 		bottom: 0%;
 	}
 }
-
-/*@media screen and (min-width: 1200px) {
-	
-	#ngView {
-		padding-left: 50px;
-	}
-}
-
-@media screen and (min-width: 1100px) and (max-width: 1199px) {
-	
-	#ngView {
-		padding-left: 0;
-	}
-}
-
-@media screen and (min-width: 1070px) and (max-width: 1099px) {
-	
-	#ngView {
-		padding-left: 40px;
-	}
-}
-
-@media screen and (min-width: 850px) and (max-width: 950px) {
-	#ngView {
-		padding-left: 30px;
-	}
-}*/
 
 @media screen and (max-width: 576px) {
 	
