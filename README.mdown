@@ -1,0 +1,72 @@
+# ReLIFE Project
+
+## Overview
+
+### Why was it created?
+
+This is the end of stream project for Code Institute's Stream One, which focuses on front-end only web development.
+
+### Its purpose?
+
+To provide information on the (fictional) ReLIFE experiment and provide the ability to apply to participate.
+
+### Where did the inspiration come from?
+
+The inspiration for this project came from the popular Japanese anime series, ReLIFE. The series focuses on the same
+technology that gives people a second chance at life by letting them spend a year back in highschool. It should be noted,
+however, that this website isn't focused on the anime itself; rather, it takes the idea of the experiment from the show and
+brings it into the real world as if it were an actual project.
+
+## Features
+
+The major focus of this website is to introduce people to the RelIFE experiment, provide them the necessary information, and
+allow them to fill in a registration form which will either be rejected or passed forward based on a certain criteria that 
+needs to be met.
+
+### Pages of the site:
+- Home
+- About
+- FAQ
+- Contact
+- Registration
+	- Success
+	- Fail
+
+## Technology
+
+### Tech used:
+- [AngularJS](https://angularjs.org/)
+	- We use **AngularJS** to handle page routing
+- [Bootstrap](https://getbootstrap.com/)
+	- We use **Bootstrap** to give our project a simple, responsive layout
+- [jQuery](https://jquery.com/)
+	- We use **jQuery** to handle some of the functionality of the site
+- [npm](https://www.npmjs.com/)
+	- We use **npm** to help manage some of the dependencies in our application
+- [bower](https://bower.io/)
+	- **Bower** is used to manage the installation of our libraries and frameworks
+- [jasmine](https://jasmine.github.io/)
+	- We use **Jasmine** to test the routing of our site
+- Manual testing
+	- The site is also manually tested, which proves more functional than Jasmine for some areas of the project
+
+## Contributing
+
+### Getting the code up and running
+1. Firstly you will need to clone this repository by running the git clone <project's Github URL> command
+2. After you've that you'll need to make sure that you have npm installed
+  1. You can get npm by installing Node from [here](https://nodejs.org/en/)
+4. After those dependencies have been installed you'll need to make sure that you have http-server installed. You can install this by running the following: ```npm install -g http-server``` **this may also require sudo on Mac/Linux**
+5. Once http-server is installed run ```http-server -c-1```
+6. The project will now run on [localhost](http://127.0.0.1:8080)
+7. Make changes to the code and if you think it belongs in here then just submit a pull request
+
+## Acknowledgements
+
+While this work is entirely my own, I'd like to thank Matt Rudge of the Code Institute for his eternal wisdom which has helped
+me out of a few binds during this project.
+
+The code used is of my own design (or tweaked by Matt's advice), with the exception of the loading spinner used in the modal
+on the registration form. All credit for that must go to [W3Schools](https://www.w3schools.com/). I wasn't sure how to create
+such a spinner from scratch, so borrowing their design allowed me to add a feature to this site that gives just a little
+more polish to the overall experience.

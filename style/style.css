@@ -75,7 +75,6 @@ header {
 #ngView {
 	background: linear-gradient(to bottom, rgba(155,235,255,0), rgba(155,235,255,1));
 	padding-left: 50px;
-	
 }
 
 footer {
@@ -191,8 +190,8 @@ p {
 
 
 /* Media queries */
-@media screen and (max-width: 750px) {
-	
+@media screen and (max-width: 770px) {
+
 	#myNav {
 		width: 150px;
 		height: 300px;
@@ -223,4 +222,12 @@ p {
 	.homeImg {
 		display: none;
 	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 817px) {
+
+    body {
+    	margin-right: 0;
+    	padding-right: 0;
+    }
 }

@@ -2,21 +2,25 @@
 window.onresize = function() { 
     location.reload(); 
 }
-  
-// Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals
+
+function initialiseVariables() {
+ var nav = document.getElementById("myNav");
+ var body = document.body;
+ var ng = document.getElementById("ngView");
+ var logo = document.getElementById("logo");
+ var panHead = document.getElementsByClassName("panel-heading");
+ var panBody = document.getElementsByClassName("panel-body");
+ var reg = document.getElementById("regForm");
+ var field = document.getElementsByTagName("input");
+ var selection = document.getElementsByTagName("select");
+ var z,y,x,v;
+}
+
 function expandNav() {
-    var nav = document.getElementById("myNav");
-	var body = document.body;
-	var ng = document.getElementById("ngView");
-	var logo = document.getElementById("logo");
-	var panHead = document.getElementsByClassName("panel-heading");
-	var panBody = document.getElementsByClassName("panel-body");
-	var reg = document.getElementById("regForm");
-	var field = document.getElementsByTagName("input");
-	var selection = document.getElementsByTagName("select");
-	var z,y,x,v;
-	  
-	if ($(window).width() > 770) {
+ 
+ //Continue with the rest of the code
+ if ($(window).width() > 750) {
+	    initialiseVariables();
 	    nav.style.left = "0";
 	    body.style.backgroundColor = "rgb(153,153,153)";
 		ng.style.background = "rgb(153,153,153)";
@@ -47,20 +51,11 @@ function expandNav() {
 		}
     }
 }
-  
+
 function contractNav() {
-    var nav = document.getElementById("myNav");
-	var body = document.body;
-	var ng = document.getElementById("ngView");
-	var logo = document.getElementById("logo");
-	var panHead = document.getElementsByClassName("panel-heading");
-	var panBody = document.getElementsByClassName("panel-body");
-	var reg = document.getElementById("regForm");
-	var field = document.getElementsByTagName("input");
-	var selection = document.getElementsByTagName("select");
-	var z,y,x,v;
-	  
-	if ($(window).width() > 770) {
+	initialiseVariables();
+
+	if ($(window).width() > 750) {
 	    nav.style.left = "-175px";
 	    body.style.backgroundColor = "#fff";
 		ng.style.background = "linear-gradient(to bottom, rgba(155,235,255,0), rgba(155,235,255,1))";
@@ -90,21 +85,11 @@ function contractNav() {
 		}
     }
 }
-  
-// The toggle function for touch screens that replaces the animated mouseover version for desktop
+
 function toggleNav() {
-    var nav = document.getElementById("myNav");
-	var body = document.body;
-	var ng = document.getElementById("ngView");
-	var logo = document.getElementById("logo");
-	var panHead = document.getElementsByClassName("panel-heading");
-	var panBody = document.getElementsByClassName("panel-body");
-	var reg = document.getElementById("regForm");
-	var field = document.getElementsByTagName("input");
-	var selection = document.getElementsByTagName("select");
-	var z,y,x,v;  
-	  
-	if ($(window).width() <= 769) {
+	initialiseVariables();
+
+	if ($(window).width() <= 750) {
 	    if (nav.style.left == "-125px") {
 	        nav.style.left = "0";
 	        body.style.backgroundColor = "rgb(153,153,153)";
