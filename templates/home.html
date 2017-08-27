@@ -1,4 +1,4 @@
-<div class="container">
+<div id="fluidSwitch" class="container">
   <section id="jumboTrans" class="jumbotron">
     <h3><i>We pass through this world but once. Few tragedies can be more extensive than the stunting of life, 
 	few injustices deeper than the denial of an opportunity to strive or even to hope, by a limit imposed from 
@@ -66,3 +66,11 @@
     </div>
   </section>
 </div>
+
+<script>
+$(document).ready(function() {
+	if ($(window).width() >= 768 && $(window).width() < 813) {
+		console.log("Hey!" + $(window).width());
+		$('#fluidSwitch').removeClass('container').addClass('container-fluid');
+	}
+});</script>

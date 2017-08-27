@@ -16,7 +16,7 @@ function expandNav() {
 	var selection = document.getElementsByTagName("select");
 	var z,y,x,v;
 	  
-	if ($(window).width() > 770) {
+	if ($(window).width() >= 992) {
 	    nav.style.left = "0";
 	    body.style.backgroundColor = "rgb(153,153,153)";
 		ng.style.background = "rgb(153,153,153)";
@@ -60,7 +60,7 @@ function contractNav() {
 	var selection = document.getElementsByTagName("select");
 	var z,y,x,v;
 	  
-	if ($(window).width() > 770) {
+	if ($(window).width() >= 992) {
 	    nav.style.left = "-175px";
 	    body.style.backgroundColor = "#fff";
 		ng.style.background = "linear-gradient(to bottom, rgba(155,235,255,0), rgba(155,235,255,1))";
@@ -104,7 +104,7 @@ function toggleNav() {
 	var selection = document.getElementsByTagName("select");
 	var z,y,x,v;  
 	  
-	if ($(window).width() <= 769) {
+	if ($(window).width() < 992) {
 	    if (nav.style.left == "-125px") {
 	        nav.style.left = "0";
 	        body.style.backgroundColor = "rgb(153,153,153)";
@@ -165,6 +165,13 @@ function toggleNav() {
 	    }
 	}
 }
+
+/*$(document).ready(function() {
+	if ($(window).width() >= 768 && $(window).width() < 785) {
+		console.log("Hey!" + $(window).width());
+		$('#fluidSwitch').removeClass('container').addClass('container-fluid');
+	}
+});*/
 
 function closeModal() {
 	setTimeout(function(){

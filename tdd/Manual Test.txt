@@ -1,0 +1,111 @@
+RELIFE MANUAL TEST
+
+Jasmine will be used to test the Angular routing, thus this manual test will focus on the remainder of the site's functionality.
+
+
+I. Navigation
+
+a) Does the navigation bar transition onto the screen when hovered over by mouse on a desktop size screen?
+   - Yes/Pass
+
+b) Does the background darken when the navigation bar transitions on screen?
+   - Yes/Pass
+
+c) Does the navigation bar transition off the screen when the mouse is removed from the area?
+   - Yes/Pass
+
+d) Does the background return to its original colour when the navigation bar returns to its start position?
+   - Yes/Pass
+
+e) Does the design of the navigation bar change when the screen is under a desktop size, as per Bootstrap's sizing for devices?
+   - Yes/Pass
+
+f) Does the functionality of the navigation bar change when the screen is under a desktop size, switching from an 'onhover'
+   function to an 'onclick' function?
+   - Yes/Pass
+
+g) Does the navigation bar transition on and off screen in its smaller device version, like it does in its larger version?
+   - Yes/Pass
+
+
+II. Responsiveness
+
+a) Do the pictures on the 'Home' page move under the text when the screen is at a tablet size?
+   - Yes/Pass
+
+b) Do the pictures on the 'Home' page disappear when the screen is at mobile size?
+   - Yes/Pass
+
+c) Do the sections of text on all pages act responsively by wrapping to avoid overflow?
+   - Yes/Partial Pass
+     - Note: Between the measurements of 768px and 784px, the text overflows from the container. Under 768px and everything wraps as
+       it should. This is due to the padding on the left, but the padding is vital to the site. The issue only occurs for those
+       16 pixels, which, after researching, appears to be due to a bug within Bootstrap. No attempted fixes have proved useful, so
+       it may be a case that for that small 16 pixel window, there will have to be a very small horizontal scrollbar appear.
+       Incredibly irritating, but the screen doesn't actually have to be scrolled to read all the content, which means it can be ignored by the user.
+
+d) Does the Bootstrap 'accordion' behave responsively when viewed on all screen sizes?
+   - Yes/Pass
+
+e) Does the form on the 'Registration' page behave responsively on all screen sizes?
+   - Yes/Pass
+
+f) Does the modal on the 'Registration' page behave responsively on all screen sizes, avoiding overflow?
+   - Yes/Pass
+
+
+III. Form Control
+
+a) Is the 'submit' button disabled until all required fields are completed?
+   - Yes/Pass
+
+b) Does the form submit and route to the 'Success' page when all requirements are met as per 'controller.js'. This includes having
+   no checkboxes marked in the Health section, having the Citizenship marked as 'yes', and having the Criminal Record section marked
+   as 'no'?
+   - Yes/Pass
+
+c) Does the form route to the 'Success' page when ANY of the checkboxes are marked in the Health section?
+   - No/Pass
+
+d) Does the form route to the 'Success' page when the Citizenship question is marked as 'no'?
+   - No/Pass
+
+e) Does the form route to the 'Success' page when the Criminal Record question is marked as 'yes'?
+   - No/Pass
+
+f) Does the form route to the 'Fail' page when ANY of the checkboxes are marked in the Health section?
+   - Yes/Pass
+
+g) Does the form route to the 'Fail' page when the Citizenship question is marked as 'no'?
+   - Yes/Pass
+
+h) Does the form route to the 'Fail' page when the Criminal Record question is marked as 'yes'?
+   - Yes/Pass
+
+i) Does the 'Zip/Post Code' field automatically change input to uppercase?
+   - Yes/Pass
+
+
+
+IV. Modal
+
+a) Does the loading modal appear when the 'submit' button on the form is clicked?
+   - Yes/Pass
+
+b) Does the modal take five (5) seconds to route to either the 'Fail' or 'Success' page?
+   - Yes/Pass
+
+c) Does Angular insert the first name of the candidate as per the input entered in the 'First Name' field?
+   - Yes/Pass
+
+d) Does the modal create white-space for a non-existent vertical scrollbar on ANY screen size, as per the well documented
+   Bootstrap bug for modals?
+   - No/Pass
+     - Note: This bug still exists in their code, but I rectified it using CSS
+
+e) Does the modal's backdrop fail to close upon routing to 'Success' or 'Fail', thus crashing the site?
+   - No/Pass
+     - Note: This was rectified using jQuery
+
+f) Does the routing to either 'Success' or 'Fail' still occur when the modal is closed using the close button?
+   - Yes/Pass
