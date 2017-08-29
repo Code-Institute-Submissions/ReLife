@@ -9,7 +9,6 @@ window.onresize = function() {
 function expandNav() {
     var nav = document.getElementById("myNav");
     var body = document.body;
-    //var ng = document.getElementById("ngView");
     var logo = document.getElementById("logo");
     var panHead = document.getElementsByClassName("panel-heading");
     var panBody = document.getElementsByClassName("panel-body");
@@ -20,8 +19,7 @@ function expandNav() {
 
     if ($(window).width() >= 992) {
         nav.style.left = "0";
-        body.style.backgroundColor = "rgb(153,153,153)";
-        //ng.style.background = "rgb(153,153,153)";
+        body.style.background = "rgb(153,153,153)";
         logo.src = "pics/ReLife_logo2.jpg";
 
         // Included if statements due to clashes when trying to execute the code while not on the page that contained the affected classes
@@ -53,7 +51,6 @@ function expandNav() {
 function contractNav() {
     var nav = document.getElementById("myNav");
     var body = document.body;
-    //var ng = document.getElementById("ngView");
     var logo = document.getElementById("logo");
     var panHead = document.getElementsByClassName("panel-heading");
     var panBody = document.getElementsByClassName("panel-body");
@@ -64,8 +61,7 @@ function contractNav() {
 
     if ($(window).width() >= 992) {
         nav.style.left = "-175px";
-        body.style.backgroundColor = "#fff";
-        //ng.style.background = "linear-gradient(to bottom, rgba(155,235,255,0), rgba(155,235,255,1))";
+        body.style.background = "linear-gradient(to bottom, rgba(155,235,255,0) 20%, rgba(155,235,255,1))";
         logo.src = "pics/ReLife_logo.jpg";
 
         if (window.location.pathname == "faq") {
@@ -97,7 +93,6 @@ function contractNav() {
 function toggleNav() {
     var nav = document.getElementById("myNav");
     var body = document.body;
-    //var ng = document.getElementById("ngView");
     var logo = document.getElementById("logo");
     var panHead = document.getElementsByClassName("panel-heading");
     var panBody = document.getElementsByClassName("panel-body");
@@ -109,8 +104,7 @@ function toggleNav() {
     if ($(window).width() < 992) {
         if (nav.style.left == "-125px") {
             nav.style.left = "0";
-            body.style.backgroundColor = "rgb(153,153,153)";
-            //ng.style.background = "rgb(153,153,153)";
+            body.style.background = "rgb(153,153,153)";
             logo.src = "pics/ReLife_logo2.jpg";
 
             if (window.location.pathname == "faq") {
@@ -138,8 +132,7 @@ function toggleNav() {
 
         } else {
             nav.style.left = "-125px";
-            body.style.backgroundColor = "#fff";
-            //ng.style.background = "linear-gradient(to bottom, rgba(155,235,255,0), rgba(155,235,255,1))";
+            body.style.background = "linear-gradient(to bottom, rgba(155,235,255,0) 20%, rgba(155,235,255,1))";
             logo.src = "pics/ReLife_logo.jpg";
 
             if (window.location.pathname == "faq") {
