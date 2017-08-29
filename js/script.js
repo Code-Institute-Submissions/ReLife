@@ -23,7 +23,7 @@ function expandNav() {
         logo.src = "pics/ReLife_logo2.jpg";
 
         // Included if statements due to clashes when trying to execute the code while not on the page that contained the affected classes
-        if (window.location.pathname == "faq") {
+        if (window.location.pathname == "/faq") {
 
             for (z = 0; z < panHead.length; z++) {
                 panHead[z].style.backgroundColor = "rgb(153,153,153)";
@@ -34,7 +34,7 @@ function expandNav() {
             }
         }
 
-        if (window.location.pathname == "register") {
+        if (window.location.pathname == "/register") {
             reg.style.backgroundColor = "rgb(153,153,153)";
 
             for (x = 0; x < field.length; x++) {
