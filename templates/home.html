@@ -21,7 +21,7 @@
 	  Whether you use the time to highlight poor past decisions or work on bettering your grades, the choice is entirely yours.
 	  We know that whatever you choose to focus on, the results have the potential to be life changing.</p>
 	  
-	  <p>Read more about the ReLIFE project <a href="/about" target="blank">here</a>.</p>
+	  <p>Read more about the ReLIFE project <a href="about" target="blank">here</a>.</p>
     </div>
     <div class="col-md-6 homeImg">
       <img src="../pics/image_6.jpg" alt="Image">
@@ -68,9 +68,11 @@
 </div>
 
 <script>
+// Limits the damage caused by a Bootstrap bug triggering at 768px
 $(document).ready(function() {
 	if ($(window).width() >= 768 && $(window).width() < 813) {
 		console.log("Hey!" + $(window).width());
 		$('#fluidSwitch').removeClass('container').addClass('container-fluid');
 	}
-});</script>
+});
+</script>

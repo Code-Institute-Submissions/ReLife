@@ -3,7 +3,9 @@ window.onresize = function() {
     location.reload(); 
 }
   
-// Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals
+// Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals.
+// Tried other variations to declare variables first and then have the seperate methods work from that, but they failed.
+// Not ideal duplicating code like this, but this is what worked, so it's better to use something that actually performs correctly
 function expandNav() {
     var nav = document.getElementById("myNav");
 	var body = document.body;
@@ -165,13 +167,6 @@ function toggleNav() {
 	    }
 	}
 }
-
-/*$(document).ready(function() {
-	if ($(window).width() >= 768 && $(window).width() < 785) {
-		console.log("Hey!" + $(window).width());
-		$('#fluidSwitch').removeClass('container').addClass('container-fluid');
-	}
-});*/
 
 function closeModal() {
 	setTimeout(function(){
