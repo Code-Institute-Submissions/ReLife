@@ -3,8 +3,6 @@ window.onresize = function() {
     location.reload();
 };
 
-
-
 // Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals.
 // Tried other variations to declare variables first and then have the seperate methods work from that, but they failed.
 // Not ideal duplicating code like this, but this is what worked, so it's better to use something that actually performs correctly
@@ -19,15 +17,13 @@ function expandNav() {
     var selection = document.getElementsByTagName("select");
     var z, y, x, v;
 
-    console.log(window.location.pathname);
-
     if ($(window).width() >= 992) {
         nav.style.left = "0";
         body.style.background = "rgb(153,153,153)";
         logo.src = "pics/ReLife_logo2.jpg";
 
         // Included if statements due to clashes when trying to execute the code while not on the page that contained the affected classes
-        if (window.location.pathname == "https://shavingseagull.github.io/ReLife/faq") {
+        if (window.location.pathname == "/ReLife/faq") {
 
             for (z = 0; z < panHead.length; z++) {
                 panHead[z].style.backgroundColor = "rgb(153,153,153)";
@@ -38,7 +34,7 @@ function expandNav() {
             }
         }
 
-        if (window.location.pathname == "https://shavingseagull.github.io/ReLife/register") {
+        if (window.location.pathname == "/ReLife/register") {
             reg.style.backgroundColor = "rgb(153,153,153)";
 
             for (x = 0; x < field.length; x++) {
@@ -68,7 +64,7 @@ function contractNav() {
         body.style.background = "linear-gradient(to bottom, rgba(155,235,255,0) 20%, rgba(155,235,255,1))";
         logo.src = "pics/ReLife_logo.jpg";
 
-        if (window.location.pathname == "faq") {
+        if (window.location.pathname == "/ReLife/faq") {
 
             for (z = 0; z < panHead.length; z++) {
                 panHead[z].style.backgroundColor = "#f5f5f5";
@@ -79,7 +75,7 @@ function contractNav() {
             }
         }
 
-        if (window.location.pathname == "register") {
+        if (window.location.pathname == "/ReLife/register") {
             reg.style.backgroundColor = "#fff";
 
             for (x = 0; x < field.length; x++) {
@@ -111,7 +107,7 @@ function toggleNav() {
             body.style.background = "rgb(153,153,153)";
             logo.src = "pics/ReLife_logo2.jpg";
 
-            if (window.location.pathname == "faq") {
+            if (window.location.pathname == "/ReLife/faq") {
 
                 for (z = 0; z < panHead.length; z++) {
                     panHead[z].style.backgroundColor = "rgb(153,153,153)";
@@ -122,7 +118,7 @@ function toggleNav() {
                 }
             }
 
-            if (window.location.pathname == "register") {
+            if (window.location.pathname == "/ReLife/register") {
                 reg.style.backgroundColor = "rgb(153,153,153)";
 
                 for (x = 0; x < field.length; x++) {
@@ -139,7 +135,7 @@ function toggleNav() {
             body.style.background = "linear-gradient(to bottom, rgba(155,235,255,0) 20%, rgba(155,235,255,1))";
             logo.src = "pics/ReLife_logo.jpg";
 
-            if (window.location.pathname == "faq") {
+            if (window.location.pathname == "/ReLife/faq") {
 
                 for (z = 0; z < panHead.length; z++) {
                     panHead[z].style.backgroundColor = "#f5f5f5";
@@ -150,7 +146,7 @@ function toggleNav() {
                 }
             }
 
-            if (window.location.pathname == "register") {
+            if (window.location.pathname == "/ReLife/register") {
                 reg.style.backgroundColor = "#fff";
 
                 for (x = 0; x < field.length; x++) {
