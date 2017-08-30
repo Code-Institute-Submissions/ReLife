@@ -3,6 +3,8 @@ window.onresize = function() {
     location.reload();
 };
 
+console.log(window.location.pathname);
+
 // Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals.
 // Tried other variations to declare variables first and then have the seperate methods work from that, but they failed.
 // Not ideal duplicating code like this, but this is what worked, so it's better to use something that actually performs correctly
@@ -16,7 +18,7 @@ function expandNav() {
     var field = document.getElementsByTagName("input");
     var selection = document.getElementsByTagName("select");
     var z, y, x, v;
-
+    
     if ($(window).width() >= 992) {
         nav.style.left = "0";
         body.style.background = "rgb(153,153,153)";
