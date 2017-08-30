@@ -1,6 +1,11 @@
 // Rectifies the issue of the nav-bar not taking its proper place on screen when the window is resized on a browser
-window.onresize = function() { 
-    location.reload(); 
+// Also prevents Android and iOS firing the resize event when scrolling
+var windowWidth = $(window).width();
+
+window.onresize = function() {
+    if ($window).width() != windowWidth) {
+        location.reload();
+    }
 }
   
 // Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals
