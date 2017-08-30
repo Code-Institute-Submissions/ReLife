@@ -34,11 +34,11 @@ angular.module('RouteControllers',[])
     			$scope.criminalYes != null ||
     			$scope.declaration == null) {
 
-    			$location.path("/fail");
+    			$location.path("fail");
     			
     		} else {
 
-    			$location.path("/success");
+    			$location.path("success");
     		}	
     	}
     });

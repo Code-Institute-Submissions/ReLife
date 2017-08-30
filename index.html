@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="RelifeApp">
 <head>
-  <meta charset="UTF-8"> 
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ReLIFE - The experiment for second chances</title>
-  
+
   <!-- Angular HTML 5 Mode -->
-  <base href="/">
-  
+  <base href="/ReLife/">
+
   <!-- External CSS and fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
   <link rel="stylesheet" href="style/style.css">
-  
+
   <!-- Bower Components -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  
+
   <style>
   body {
       font-family: 'Source Sans Pro', sans-serif;
       padding-right: 0 !important; /* Fixes a bug with Bootstrap modals creating a blank space for a scroll bar */
-      background: linear-gradient(to bottom, rgba(155,235,255,0) 15%, rgba(155,235,255,1));
+      background: linear-gradient(to bottom, rgba(155,235,255,0) 20%, rgba(155,235,255,1));
   }
 
   </style>
@@ -34,22 +34,22 @@
   <header>
     <img id="logo" src="pics/ReLife_logo.jpg" alt="ReLife Logo">
   </header>
-  
+
   <nav id="myNav" onmouseenter="expandNav()" onmouseleave="contractNav()" onclick="toggleNav()">
-	  <a id="navTop" href="/">Home</a>
-	  <a href="/about">About</a>
-	  <a href="/faq">FAQ</a>
-	  <a href="/contact">Contact</a>
-	  <a href="/register">Registration</a>
+	  <a id="navTop" href=".">Home</a>
+	  <a href="about">About</a>
+	  <a href="faq">FAQ</a>
+	  <a href="contact">Contact</a>
+	  <a href="register">Registration</a>
 	  <div id="navArrow"><span class="glyphicon glyphicon-triangle-right"></span></div>
   </nav>
-  
+
   <hr class="hrLine">
-  
+
   <section id="ngView" data-ng-view>
-  
+
   </section>
-  
+
   <footer>
 	  <p>Scott Kipp - ReLIFE &copy;</p>
   </footer>
