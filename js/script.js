@@ -1,5 +1,4 @@
 // Rectifies the issue of the nav-bar not taking its proper place on screen when the window is resized on a browser
-<<<<<<< HEAD
 // Also prevents Android and iOS firing the resize event when scrolling
 var windowWidth = $(window).width();
 
@@ -7,18 +6,11 @@ window.onresize = function() {
     if ($window).width() != windowWidth) {
         location.reload();
     }
-}
-  
-// Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals
-=======
-window.onresize = function() {
-    location.reload();
 };
 
 // Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals.
 // Tried other variations to declare variables first and then have the seperate methods work from that, but they failed.
 // Not ideal duplicating code like this, but this is what worked, so it's better to use something that actually performs correctly
->>>>>>> gh-pages
 function expandNav() {
     var nav = document.getElementById("myNav");
     var body = document.body;
