@@ -37,7 +37,7 @@ b) Do the pictures on the 'Home' page disappear when the screen is at mobile siz
    - Yes/Pass
 
 c) Do the sections of text on all pages act responsively by wrapping to avoid overflow?
-   - Yes/Partial Pass
+   - Yes & No/Partial Pass
      - Note: Between the measurements of 768px and 784px, the text overflows from the container. Under 768px and everything wraps as
        it should. This is due to the padding on the left, but the padding is vital to the site. The issue only occurs for those
        16 pixels, which, after researching, appears to be due to a bug within Bootstrap. No attempted fixes have proved useful, so
@@ -56,7 +56,7 @@ f) Does the modal on the 'Registration' page behave responsively on all screen s
 
 III. Form Control
 
-a) Is the 'submit' button disabled until all required fields are completed?
+a) Is the 'submit' button disabled before all required fields are completed?
    - Yes/Pass
 
 b) Does the form submit and route to the 'Success' page when all requirements are met as per 'controller.js'. This includes having
@@ -98,7 +98,7 @@ b) Does the modal take five (5) seconds to route to either the 'Fail' or 'Succes
 c) Does Angular insert the first name of the candidate as per the input entered in the 'First Name' field?
    - Yes/Pass
 
-d) Does the modal create white-space for a non-existent vertical scrollbar on ANY screen size, as per the well documented
+d) Does the modal create white-space for a non-existent vertical scrollbar on ANY screen size, as per the well-documented
    Bootstrap bug for modals?
    - No/Pass
      - Note: This bug still exists in their code, but I rectified it using CSS

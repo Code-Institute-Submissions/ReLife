@@ -1,16 +1,14 @@
 // Rectifies the issue of the nav-bar not taking its proper place on screen when the window is resized on a browser
-<<<<<<< HEAD
 // Also prevents Android and iOS firing the resize event when scrolling
 var windowWidth = $(window).width();
 
 window.onresize = function() {
-    if ($window).width() != windowWidth) {
+    if ($(window).width() != windowWidth) {
         location.reload();
     }
 }
   
 // Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals
-=======
 window.onresize = function() {
     location.reload();
 };
@@ -18,11 +16,9 @@ window.onresize = function() {
 // Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals.
 // Tried other variations to declare variables first and then have the seperate methods work from that, but they failed.
 // Not ideal duplicating code like this, but this is what worked, so it's better to use something that actually performs correctly
->>>>>>> gh-pages
 function expandNav() {
     var nav = document.getElementById("myNav");
     var body = document.body;
-    var logo = document.getElementById("logo");
     var panHead = document.getElementsByClassName("panel-heading");
     var panBody = document.getElementsByClassName("panel-body");
     var reg = document.getElementById("regForm");
@@ -33,7 +29,6 @@ function expandNav() {
     if ($(window).width() >= 992) {
         nav.style.left = "0";
         body.style.background = "rgb(153,153,153)";
-        logo.src = "pics/ReLife_logo2.jpg";
 
         // Included if statements due to clashes when trying to execute the code while not on the page that contained the affected classes
         if (window.location.pathname == "/ReLife/faq") {
@@ -64,7 +59,6 @@ function expandNav() {
 function contractNav() {
     var nav = document.getElementById("myNav");
     var body = document.body;
-    var logo = document.getElementById("logo");
     var panHead = document.getElementsByClassName("panel-heading");
     var panBody = document.getElementsByClassName("panel-body");
     var reg = document.getElementById("regForm");
@@ -75,7 +69,6 @@ function contractNav() {
     if ($(window).width() >= 992) {
         nav.style.left = "-175px";
         body.style.background = "linear-gradient(to bottom, rgba(155,235,255,0) 20%, rgba(155,235,255,1))";
-        logo.src = "pics/ReLife_logo.jpg";
 
         if (window.location.pathname == "/ReLife/faq") {
 
@@ -106,7 +99,6 @@ function contractNav() {
 function toggleNav() {
     var nav = document.getElementById("myNav");
     var body = document.body;
-    var logo = document.getElementById("logo");
     var panHead = document.getElementsByClassName("panel-heading");
     var panBody = document.getElementsByClassName("panel-body");
     var reg = document.getElementById("regForm");
@@ -118,7 +110,6 @@ function toggleNav() {
         if (nav.style.left == "-125px") {
             nav.style.left = "0";
             body.style.background = "rgb(153,153,153)";
-            logo.src = "pics/ReLife_logo2.jpg";
 
             if (window.location.pathname == "/ReLife/faq") {
 
@@ -146,7 +137,6 @@ function toggleNav() {
         } else {
             nav.style.left = "-125px";
             body.style.background = "linear-gradient(to bottom, rgba(155,235,255,0) 20%, rgba(155,235,255,1))";
-            logo.src = "pics/ReLife_logo.jpg";
 
             if (window.location.pathname == "/ReLife/faq") {
 

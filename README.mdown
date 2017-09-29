@@ -19,8 +19,8 @@ brings it into the real world as if it were an actual project.
 
 ## Features
 
-The major focus of this website is to introduce people to the RelIFE experiment, provide them the necessary information, and
-allow them to fill in a registration form which will either be rejected or passed forward based on a certain criteria that 
+The major focus of this website is to introduce people to the ReLIFE experiment, provide them the necessary information, and
+allow them to fill in a registration form which will either be rejected or passed forward based on a certain criteria that
 needs to be met.
 
 ### Pages of the site:

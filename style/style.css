@@ -92,7 +92,7 @@ p {
 	font-size: 1.13em;
 }
 
-/* Home page (displayed in ng-view) */
+/* Home page (pages displayed in ng-view) */
 #jumboTrans {
     background-color: rgba(238,238,238,0);
 }
