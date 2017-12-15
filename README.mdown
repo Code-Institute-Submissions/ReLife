@@ -2,6 +2,10 @@
 
 ## Overview
 
+### Current Version
+
+The current version is **1.0**.
+
 ### Why was it created?
 
 This is the end of stream project for Code Institute's Stream One, which focuses on front-end only web development.
