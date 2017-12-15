@@ -5,6 +5,7 @@
 ### Current Version
 
 The current version is **1.0**.
+
 You can find the live site on [Github Pages](https://shavingseagull.github.io/ReLife/).
 
 ### Why was it created?
