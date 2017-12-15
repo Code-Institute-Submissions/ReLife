@@ -5,6 +5,7 @@
 ### Current Version
 
 The current version is **1.0**.
+You can find the live site on [Github Pages](https://shavingseagull.github.io/ReLife/).
 
 ### Why was it created?
 
@@ -40,30 +41,29 @@ needs to be met.
 
 ### Tech used:
 - [AngularJS](https://angularjs.org/)
-	- We use **AngularJS** to handle page routing
+	- I use **AngularJS** to handle page routing
 - [Bootstrap](https://getbootstrap.com/)
-	- We use **Bootstrap** to give our project a simple, responsive layout
+	- I use **Bootstrap** to give our project a simple, responsive layout
 - [jQuery](https://jquery.com/)
-	- We use **jQuery** to handle some of the functionality of the site
+	- I use **jQuery** to handle some of the functionality of the site
 - [npm](https://www.npmjs.com/)
-	- We use **npm** to help manage some of the dependencies in our application
+	- I use **npm** to help manage some of the dependencies in our application
 - [bower](https://bower.io/)
 	- **Bower** is used to manage the installation of our libraries and frameworks
 - [jasmine](https://jasmine.github.io/)
-	- We use **Jasmine** to test the routing of our site
+	- I use **Jasmine** to test the routing of our site
 - Manual testing
 	- The site is also manually tested, which proves more functional than Jasmine for some areas of the project
 
 ## Contributing
 
 ### Getting the code up and running
-1. Firstly you will need to clone this repository by running the git clone <project's Github URL> command
+1. Firstly you will need to clone this repository by running the ```git clone https://github.com/ShavingSeagull/ReLife``` command
 2. After you've that you'll need to make sure that you have npm installed
   1. You can get npm by installing Node from [here](https://nodejs.org/en/)
 4. After those dependencies have been installed you'll need to make sure that you have http-server installed. You can install this by running the following: ```npm install -g http-server``` **this may also require sudo on Mac/Linux**
 5. Once http-server is installed run ```http-server -c-1```
 6. The project will now run on [localhost](http://127.0.0.1:8080)
-7. Make changes to the code and if you think it belongs in here then just submit a pull request
 
 ## Acknowledgements
 
@@ -71,6 +71,5 @@ While this work is entirely my own, I'd like to thank Matt Rudge of the Code Ins
 me out of a few binds during this project.
 
 The code used is of my own design (or tweaked by Matt's advice), with the exception of the loading spinner used in the modal
-on the registration form. All credit for that must go to [W3Schools](https://www.w3schools.com/). I wasn't sure how to create
-such a spinner from scratch, so borrowing their design allowed me to add a feature to this site that gives just a little
+on the registration form. All credit for that must go to [W3Schools](https://www.w3schools.com/). Making a spinner from scratch seemed like a gargantuan waste of time when they had an excellent one ready to go, so borrowing their design allowed me to add a feature to this site that gives just a little
 more polish to the overall experience.
