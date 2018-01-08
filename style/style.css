@@ -2,7 +2,7 @@
   =     Style sheet for ReLife Project      =
   ===========================================*/
 
-/* Index page */  
+/* Index page */
 #myNav {
 	width: 200px;
 	height: 100%;
@@ -73,6 +73,7 @@ header {
 }
 
 #ngView {
+  height: 100%;
 	padding-left: 50px;
 }
 
@@ -204,12 +205,12 @@ p {
 		transition: 0.5s;
 		border-radius: 0 10px 0 0;
 	}
-	
+
 	#myNav a {
 		font-size: 1.2em;
 		padding: 10px 0 10px 10px;
 	}
-	
+
 	#navArrow {
 		left: 148px;
 		bottom: 0%;
@@ -217,7 +218,7 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-	
+
 	.homeImg {
 		display: none;
 	}
