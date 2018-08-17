@@ -6,7 +6,7 @@ window.onresize = function() {
     if ($(window).width() != windowWidth) {
         location.reload();
     }
-}
+};
 
 // Functions for the interactive Nav-Bar. Duplicated variables to avoid declaring globals.
 // Tried other variations to declare variables first and then have the seperate methods work from that, but they failed.

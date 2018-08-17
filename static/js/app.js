@@ -28,7 +28,7 @@ angular.module("RelifeApp").config(function($routeProvider, $locationProvider) {
 		
 	})
 	.when("/success", {
-		templateUrl: "templates/success.html",
+		templateUrl: "templates/success.html"
 		
 	})
 	.otherwise({

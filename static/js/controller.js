@@ -5,7 +5,7 @@ angular.module('RouteControllers',[])
 	        if ($scope.regForm.$valid) {
 	            $timeout(submitForm, 5000);
             }
-        } 
+        };
 
     	var submitForm = function() {   		
 
