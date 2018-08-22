@@ -49,10 +49,12 @@ needs to be met.
 	- I use **npm** to help manage some of the dependencies in our application
 - [bower](https://bower.io/)
 	- **Bower** is used to manage the installation of our libraries and frameworks
-- [jasmine](https://jasmine.github.io/)
-	- I use **Jasmine** to test the routing of our site
-- Manual testing
-	- The site is also manually tested, which proves more functional than Jasmine for some areas of the project
+
+### Testing
+
+[Jasmine](https://jasmine.github.io/) handles the automated testing for the JavaScript code. Extensive manual testing
+covers the rest of the site's functionality, as it is only a front-end project.
+
 
 ## Contributing
 
